@@ -3,14 +3,14 @@
 MovieTracker is a full-stack project where users can register/login, search movies using OMDb, and manage a personal watchlist.
 
 ## UI Preview
-### Login / Register
-![Login Page](assets/screenshots/login.png)
+### Screenshot 1 - Login / Register
+![Screenshot 1 - Login Page](assets/screenshots/login.png)
 
-### Dashboard
-![Dashboard](assets/screenshots/dashboard.png)
+### Screenshot 2 - Watchlist + Trending
+![Screenshot 2 - Watchlist and Trending](assets/screenshots/watchlist-trending.png)
 
-### Watchlist + Trending
-![Watchlist and Trending](assets/screenshots/watchlist-trending.png)
+### Screenshot 3 - Dashboard
+![Screenshot 3 - Dashboard](assets/screenshots/dashboard.png)
 
 ## Architecture
 - Backend: Spring Boot, Spring Security (JWT), JPA, PostgreSQL
