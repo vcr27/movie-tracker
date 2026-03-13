@@ -2,11 +2,29 @@
 
 MovieTracker is a full-stack project where users can register/login, search movies using OMDb, and manage a personal watchlist.
 
+## UI Preview
+### Login / Register
+![Login Page](assets/screenshots/login.png)
+
+### Dashboard
+![Dashboard](assets/screenshots/dashboard.png)
+
+### Watchlist + Trending
+![Watchlist and Trending](assets/screenshots/watchlist-trending.png)
+
 ## Architecture
 - Backend: Spring Boot, Spring Security (JWT), JPA, PostgreSQL
 - Cache: Redis (Spring Cache abstraction)
 - Frontend: React + Vite
 - Infra: Docker + docker-compose
+
+## Core Features
+- JWT-based register/login flow
+- Movie search with autocomplete suggestions
+- Add to watchlist, mark watched, and rate movies (1-10)
+- Trending movie cards with poster images
+- Redis-backed caching for search/suggestions performance
+- Structured global exception handling and health endpoint (`/actuator/health`)
 
 ## Key Backend Decisions
 - Stateless auth using JWT
@@ -36,6 +54,11 @@ Run tests:
 ./mvnw test
 ```
 
+## Demo Note
+- Public live deployment is intentionally not exposed to avoid third-party API quota abuse and key leakage.
+- This repo is fully reproducible locally using Docker with environment variables.
+- Screenshots above show the working UI/flows.
+
 ## Frontend Run
 ```bash
 cd frontend
@@ -52,4 +75,4 @@ Frontend:
 - "I integrated OMDb as an external dependency and persisted unique movies by imdbID to avoid duplicates."
 - "I containerized app + database using Docker Compose for local and cloud parity."
 - "I externalized secrets (JWT, OMDb key, DB credentials) and added actuator health checks for deployment readiness."
-- "I shipped a minimal React client that exercises all core user journeys end-to-end."
+- "I shipped a modern React UI with login-first flow, autocomplete search, poster-rich watchlist, and trending suggestions."
