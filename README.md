@@ -4,13 +4,13 @@ MovieTracker is a full-stack project where users can register/login, search movi
 
 ## UI Preview
 ### Screenshot 1 - Login / Register
-![Screenshot 1 - Login Page](assets/screenshots/login.png)
+![Screenshot 1 - Login Page](assets/screenshots/Login_Page.png)
 
-### Screenshot 2 - Watchlist + Trending
-![Screenshot 2 - Watchlist and Trending](assets/screenshots/watchlist-trending.png)
+### Screenshot 2 - Watchlist
+![Screenshot 2 - Watchlist and Trending](assets/screenshots/Watchlist.png)
 
-### Screenshot 3 - Dashboard
-![Screenshot 3 - Dashboard](assets/screenshots/dashboard.png)
+### Screenshot 3 - Trending
+![Screenshot 3 - Dashboard](assets/screenshots/Trending.png)
 
 ## Architecture
 - Backend: Spring Boot, Spring Security (JWT), JPA, PostgreSQL
